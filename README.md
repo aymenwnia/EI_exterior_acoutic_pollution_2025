@@ -27,24 +27,35 @@ pip install numpy scipy matplotlib
 ```
 ## 3. Repository Structure
 
-acoustic-fractal-optimization/
-│
-├── README.md                   # Project documentation
-│
-├── _env.py                     # [Core] Environment constants
-├── preprocessing.py            # [Core] Geometry and mesh generation
-├── processing.py               # [Core] Helmholtz & Adjoint solvers
-├── postprocessing.py           # [Core] Visualization tools
-├── multilevel.py               # [Core] Optimization logic & library
-│
-├── compute_alpha.py            # [Step 1] Material physics generator
-├── demo_control_polycopie.py   # [Step 2] Single-run demonstration
-│
-├── energy_analysis.py          # [Analysis] Baseline (Fully absorbent)
-├── energy_analysis_optimised.py# [Analysis] Initial vs Relaxed vs Binary
-├── energymultilevel.py         # [Analysis] Theoretical limits (Sweep)
-├── energymultilevelcomp.py     # [Analysis] Robustness (Optimize once, sweep)
-└── mltifreq_multi_lev.py       # [Advanced] Multi-frequency optimization
+
+README.md                   # Project documentation
+
+
+ _env.py                     # [Core] Environment constants
+ 
+ preprocessing.py            # [Core] Geometry and mesh generation
+ 
+ processing.py               # [Core] Helmholtz & Adjoint solvers
+ 
+ postprocessing.py           # [Core] Visualization tools
+ 
+ multilevel.py               # [Core] Optimization logic & library
+ 
+
+compute_alpha.py            # [Step 1] Material physics generator
+
+demo_control_polycopie.py   # [Step 2] Single-run demonstration
+
+
+energy_analysis.py          # [Analysis] Baseline (Fully absorbent)
+
+energy_analysis_optimised.py# [Analysis] Initial vs Relaxed vs Binary
+
+energymultilevel.py         # [Analysis] Theoretical limits (Sweep)
+
+energymultilevelcomp.py     # [Analysis] Robustness (Optimize once, sweep)
+
+mltifreq_multi_lev.py       # [Advanced] Multi-frequency optimization
 
 
 
